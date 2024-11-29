@@ -1,0 +1,10 @@
+# Copier ce fichier en un supprimant l'extension .example
+# et mettre a jour les valeurs des champs pour correspondre a votre reseau
+
+ap_scan=1
+
+# Ajouter autant de blocs network que de reseaux auquels se connecter
+network={
+  ssid="Nom du reseau auquel se connecter"
+  psk="Mot de passe du reseau"
+}
