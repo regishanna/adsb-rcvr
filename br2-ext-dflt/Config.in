@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL_DFLT_PATH/package/adsbhub/Config.in"
