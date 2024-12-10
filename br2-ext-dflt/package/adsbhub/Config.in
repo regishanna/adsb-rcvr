@@ -4,5 +4,5 @@ config BR2_PACKAGE_ADSBHUB
 	depends on BR2_PACKAGE_DUMP1090
 	select BR2_PACKAGE_HOST_RUSTC
 	help
-	  Permet d'alimenter le réseau ADSBHub avec les données
-	  de trafic provenant de dump1090
+	  Allows you to feed the ADSBHub network with
+	  traffic data from dump1090

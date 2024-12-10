@@ -1,15 +1,15 @@
 # adsb-rcvr
-Image Linux d'un recepteur ADSB sur Raspberry Pi
+Linux image of an ADS-B receiver on Raspberry Pi Zero W
 
-## Clonage du dépôt et des sous-modules
+## Cloning the repository and submodules
 ```
-git clone --recurse-submodules <methode d'acces au depot>
+git clone --recurse-submodules <method of accessing the repository>
 ```
 
-## Personnalisation de l'image
-Copier les fichiers suivants en supprimant l'extension .example puis les adapter pour correspondre a votre besoin :
-- ./br2-ext-dflt/board/my_board/overlay/root/.ssh/authorized_keys.example : clés publiques authorisées a se connecter en ssh avec le compte root
-- ./br2-ext-dflt/board/my_board/overlay/etc/wpa_supplicant.conf.example : informations de connexion aux réseaux Wi-Fi
+## Image customization
+Copy the following files by removing the .example extension then adapt them to meet your needs :
+- ./br2-ext-dflt/board/my_board/overlay/root/.ssh/authorized_keys.example: public keys authorized to connect via ssh with the root account
+- ./br2-ext-dflt/board/my_board/overlay/etc/wpa_supplicant.conf.example: Wi-Fi network connection information
 
 ## Compilation
 ```
@@ -17,4 +17,4 @@ cd buildroot
 make BR2_EXTERNAL=../br2-ext-dflt my_board_defconfig
 make
 ```
-L'image à écrire sur la carte SD est située : ./buildroot/output/images/sdcard.img
+The image to be written to the SD card is located: ./buildroot/output/images/sdcard.img

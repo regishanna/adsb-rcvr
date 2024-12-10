@@ -1,2 +1,2 @@
-# Refuse l'authentification par mot de passe
+# Refuses password authentication
 DROPBEAR_ARGS="-s"
