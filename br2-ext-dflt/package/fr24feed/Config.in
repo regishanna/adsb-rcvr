@@ -1,0 +1,11 @@
+config BR2_PACKAGE_FR24FEED
+	bool "fr24feed"
+	depends on BR2_PACKAGE_NTP
+	depends on BR2_PACKAGE_DUMP1090
+	select BR2_PACKAGE_CA_CERTIFICATES
+	select BR2_PACKAGE_BASH
+	help
+	  Allows you to feed the Flightradar24 network with
+	  traffic data from dump1090
+
+	  https://www.flightradar24.com/share-your-data

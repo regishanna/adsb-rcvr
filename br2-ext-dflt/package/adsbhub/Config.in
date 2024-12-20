@@ -6,3 +6,5 @@ config BR2_PACKAGE_ADSBHUB
 	help
 	  Allows you to feed the ADSBHub network with
 	  traffic data from dump1090
+
+	  https://github.com/regishanna/adsbhub
