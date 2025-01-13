@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RESTART
+	bool "restart"
+	help
+	  Restart infinitely a binary if it exits

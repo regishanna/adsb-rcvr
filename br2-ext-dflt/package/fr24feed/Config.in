@@ -4,6 +4,7 @@ config BR2_PACKAGE_FR24FEED
 	depends on BR2_PACKAGE_DUMP1090
 	select BR2_PACKAGE_CA_CERTIFICATES
 	select BR2_PACKAGE_BASH
+	select BR2_PACKAGE_RESTART
 	help
 	  Allows you to feed the Flightradar24 network with
 	  traffic data from dump1090

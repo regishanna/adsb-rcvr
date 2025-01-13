@@ -1,0 +1,6 @@
+config BR2_PACKAGE_DUMP1090_SERVICE
+	bool "dump1090-service"
+	depends on BR2_PACKAGE_DUMP1090
+	select BR2_PACKAGE_RESTART
+	help
+	  Enable dump1090 to start at boot

@@ -9,7 +9,8 @@ PIDFILE="/var/run/$DAEMON.pid"
 
 start() {
 	echo -n "Starting $DAEMON... "
-	start-stop-daemon -S -b -m -p $PIDFILE -x /usr/bin/$DAEMON
+	# Restart the daemon if it exits
+	start-stop-daemon -S -b -m -p $PIDFILE -x /usr/bin/restart.sh -- $DAEMON /usr/bin/$DAEMON
 	[ $? -eq 0 ] && echo "OK" || echo "ERROR"
 }
 

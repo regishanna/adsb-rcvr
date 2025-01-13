@@ -1,2 +1,4 @@
 source "$BR2_EXTERNAL_DFLT_PATH/package/adsbhub/Config.in"
+source "$BR2_EXTERNAL_DFLT_PATH/package/dump1090-service/Config.in"
 source "$BR2_EXTERNAL_DFLT_PATH/package/fr24feed/Config.in"
+source "$BR2_EXTERNAL_DFLT_PATH/package/restart/Config.in"

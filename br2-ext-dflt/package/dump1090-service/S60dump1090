@@ -9,7 +9,8 @@ PIDFILE="/var/run/$DAEMON.pid"
 
 start() {
 	echo -n "Starting $DAEMON... "
-	start-stop-daemon -S -b -m -p $PIDFILE -x /usr/bin/dump1090 -- --net --net-bind-address 127.0.0.1
+	# Restart the daemon if it exits
+	start-stop-daemon -S -b -m -p $PIDFILE -x /usr/bin/restart.sh -- $DAEMON "/usr/bin/$DAEMON --net --net-bind-address 127.0.0.1"
 	[ $? -eq 0 ] && echo "OK" || echo "ERROR"
 }
 
